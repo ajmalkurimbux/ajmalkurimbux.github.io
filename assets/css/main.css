@@ -717,7 +717,7 @@ table.alt tbody tr td {
   .highlights .content {
     border-radius: 4px;
     height: 100%;
-    padding: 3rem;
+    padding: 0.5rem;
     text-align: center; }
     .highlights .content .icon {
       font-size: 5rem; }
@@ -2885,4 +2885,9 @@ body.is-menu-visible #menu {
 .imagepost{
   height: 100%;
   width: 100%;
+}
+.buttonContainer{
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
 }
