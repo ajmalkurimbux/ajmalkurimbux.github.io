@@ -1,5 +1,5 @@
 body {
-  margin: 2em;
+  /* margin: 2em; */
 }
 aside {
     background: #1f8dd6; /* same color as selected state on site menu */
@@ -37,4 +37,10 @@ button {
 }
 .honeypot-field {
   display: none;
+}
+.form{
+  margin: 2em;
+}
+.message{
+  margin: 2em;
 }

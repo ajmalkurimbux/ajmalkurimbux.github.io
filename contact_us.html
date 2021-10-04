@@ -1,32 +1,88 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="contact form example">
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Core97</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Form Example</title>
-</head>
+	</head>
+	<body style="padding-top: 0">
 
-<body>
-  <h2 class="content-head is-center">Contact Us!</h2>
-  <aside>
-       <p>
-           We would <em>love</em> to hear from you! </p>
-           <p>Please use the <b><em>Contact Form</em></b>
-           to send us a message.
-       </p>
-   </aside>
+		<!-- Nav -->
+		<nav class="navbar navbar-expand-md navbar-light bg-dark">
+			
+			<a style="color:white;" class="logo" href="index.html">CO<span class='letter_red'>R</span>E<span class='letter_red'>97</span></a>
+				
+			<button 
+			type="button" 
+			data-bs-toggle="collapse" 
+			data-bs-target="#navbarNav"
+			class="navbar-toggler navbar-dark" 
+			aria-controls="navbarNav"
+			aria-expanded="false"
+			aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div 
+			  class="collapse navbar-collapse" 
+			  id="navbarNav"
+			  style="padding-right: 110px;">
+			  <ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+				  <a href="index.html" class="nav-link text-white">
+					Home
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a href="products.html" class="nav-link text-white">
+					Products
+				  </a>
+				</li>
+				<li class="nav-item active">
+				  <a href="" class="nav-link text-white">
+					Contact us
+				  </a>
+				</li>
+			  </ul>
+			</div>
 
-<!-- START HERE -->
-   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <!-- Style The Contact Form How Ever You Prefer -->
-   <link rel="stylesheet" href="assets/css/contact-us-style.css">
-
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbz6-CZxzM6dS5qVMJuBnC7P1Ie3NeDvHhyknV0HuSn23sdOU1TIeURzysJR_TuKIg8xsw/exec">
+		  </nav>
+		
+		<!-- Banner -->
+			<!-- <section id="banner">
+				<div class="inner">
+					<h1>Contact</h1>
+					<h1>CO<span class='letter_red'>R</span>E<span class='letter_red'>97</span></h1>
+				</div>
+				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
+			</section> -->
+		
+		<!--Contact us-->
+		<!--VERSION1-->
+    <h2 class="content-head is-center">Contact Us!</h2>
+    <aside class="message">
+         <p>
+             We would <em>love</em> to hear from you! </p>
+             <p>Please use the <b><em><a href="contact_us.html" class="text-white">Contact Form</a></em></b>
+             to send us a message.
+         </p>
+     </aside>
+     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <!-- Style The Contact Form How Ever You Prefer -->
+     <link rel="stylesheet" href="assets/css/contact-us-style.css">
+    <form class="gform pure-form pure-form-stacked form" method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbz6-CZxzM6dS5qVMJuBnC7P1Ie3NeDvHhyknV0HuSn23sdOU1TIeURzysJR_TuKIg8xsw/exec">
     <!-- change the form action to your script url -->
 
     <div class="form-elements">
@@ -55,25 +111,86 @@
        <fieldset class="pure-group honeypot-field">
         <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
         <input id="honeypot" type="text" name="honeypot" value="" />
-      </fieldset>  
+      </fieldset>   
 
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+      <br>
+
+      <div class="buttonContainer">
+        <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Send
+        </button>				
+      </div>
+   
+
     </div>
+    
     <!-- Customise the Thankyou Message People See when they submit the form: -->
     <div class="thankyou_message" style="display:none;text-align: center;">
       <h2><em>Thanks</em> for contacting us!
         We will get back to you soon!</h2>
       <br>
-      <button onclick="index.html" class="back">Home</button>
+      <div class="buttonContainer">
+        <!-- <button onclick="" class="button-success pure-button button-xlarge back">Close</button> -->
+        <div class="buttonContainer">
+          
+              <a href="index.html" class="btn btn-light back">
+                Close
+              </a> 
+        					
+        </div>
+      </div>
     </div>
 
   </form>
 
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" src="form-submission-handler.js"></script>
-  <script data-cfasync="false" type="text/javascript" src="./assets/js/form-submission-handler.js"></script>
-<!-- END -->
+		<!-- CTA
+			<section id="cta" class="wrapper">
+				<div class="inner">
+					<h2 style="color:rgba(255, 255, 255, 0.816);font-weight: 500;">PRODUCTS QUALITY:</h2>
+					<p style="color:rgb(255, 255, 255);font-weight: 600;font-size: 1.5rem;">We ensure that our products are made of high quality materials and high quality printing <br>just for your complete satisfaction. </p>
+				</div>
+			</section> -->
 
-</body>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="inner">
+		<div class="content">
+			<section>
+				<h3>About CORE97</h3>
+				<p>CORE97 is a new clothing company started in 2021. Our aim is to provide you a high quality and long lasting product. The satisfaction of our clients is our top priority.</p>
+			</section>
+			<section>
+				<h4>Support</h4>
+				<ul class="alt">
+					<li><a href="#">Help Center</a></li>
+					<li><a href="#">Safety center</a></li>
+					<li><a href="#">Community Guidelines</a></li>
+					<li><a href="#">Transparency</a></li>
+				</ul>
+			</section>
+			<section>
+				<h4>Follow us</h4>
+				<ul class="plain">
+					<li><a href="https://api.WhatsApp.com/send?57099624"><i class="icon fa-whatsapp">&nbsp;</i>WhatsApp</a></li>
+					<li><a href="https://www.facebook.com/Core97wears/"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+					<li><a href="https://www.instagram.com/core_97/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+				</ul>
+			</section>
+		</div>
+		<div class="copyright">
+			&copy; CORE97
+		</div>
+	</div>
+</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script data-cfasync="false" type="text/javascript" src="./assets/js/form-submission-handler.js"></script>
+	</body>
 </html>
