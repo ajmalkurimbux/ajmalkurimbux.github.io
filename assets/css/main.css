@@ -2891,3 +2891,24 @@ body.is-menu-visible #menu {
   justify-content: center;  
   align-items: center;  
 }
+.effect-1{
+  border:0;
+  outline: none;
+  width: 100%;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+.effect-1 ~ .focus-border{
+  position:absolute;
+  bottom:0;
+  left:50%;
+  width:0;
+  height: 2px;
+  background-color: rgb(185,19,185);
+  transition: 0.4s;
+}
+.effect-1:focus ~ focus-border{
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
